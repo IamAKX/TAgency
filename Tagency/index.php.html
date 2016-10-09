@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>T Agency</title>
+    	<meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+<!-- 
+Flex Template 
+http://www.templatemo.com/tm-406-flex
+-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+       
+   
+   <?php
+$myfile = fopen("count.txt", "r") or die("Unable to open file!");
+$cnt= fread($myfile,filesize("count.txt"));
+$a = intval($cnt)+1;
+fclose($myfile);
+$myfile = fopen("count.txt", "w") or die("Unable to open file!");
+fwrite($myfile, $a);
+fclose($myfile);
+?>
+   
+  
+        
+    </head>
+	
+	<link rel="shortcut icon" href="images/titlelogo.jpg"/>
+	
+    <body >
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+    
+      <!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 id="bookId" style="text-align:center"></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+        <div class="site-main" id="sTop">
+            <div class="site-header">
+                <div class="container">
+                    <div class="row">
+                         <div class="col-md-12 text-center" >
+                            <ul class="social-icons">
+                                <li><a href="https://www.facebook.com/tagencyindia" class="fa fa-facebook"></a></li>                               
+                                <li><a href="https://www.instagram.com/tagencyindia/" class="fa fa-instagram"></a></li>
+                                <li><a href="https://www.linkedin.com/in/t-agency-58a71911b?trk=hp-identity-name" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div> <!-- /.col-md-12 -->
+                    </div> <!-- /.row -->
+                </div> <!-- /.container -->
+                <div class="main-header">
+                    <div class="container">
+                        <div id="menu-wrapper">
+                            <div class="row">
+                                <div class="logo-wrapper col-md-2 col-sm-3">
+                                    <h1>
+                                        <a href="#"><!--T&nbspAgency--></a>
+                                    </h1>
+                                </div> <!-- /.logo-wrapper -->
+                                <div class="col-md-10 col-sm-10 main-menu text-right">
+                                    <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
+                                    <ul class="menu-first">
+                                        <li class="active"><a href="#">Home</a></li>
+                                        <li><a href="#portfolio">Artists</a></li>
+                                        <!-- <li><a href="#our-team">Team</a></li> -->
+                                        <li><a href="#contact">Contact</a></li>                                 
+                                    </ul>                                    
+                                </div> <!-- /.main-menu -->
+                            </div> <!-- /.row -->
+                        </div> <!-- /#menu-wrapper -->                        
+                    </div> <!-- /.container -->
+                </div> <!-- /.main-header -->
+            </div> <!-- /.site-header -->
+            <div class="site-slider">
+                <div class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+							<!--
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/slide1.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    <h2>The WolfPack</h2>
+									<p>The above picture is of WolfPack performing in Kolkata and the event was<br/> 
+										managed by Creative Cubes. T Agency is a project under <br/>
+										Creative Cubes and has the right to use the picture.</p>
+                                </div>
+                            </li>-->
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/banner/1.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/banner/2.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/banner/3.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/banner/4.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/banner/5.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <div class="overlay"></div>
+                                <img src="images/banner/6.jpg" alt="">
+                                <div class="slider-caption visible-md visible-lg">
+                                    
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div> <!-- /.flexslider -->
+                </div> <!-- /.slider -->
+            </div> <!-- /.site-slider -->
+        </div> <!-- /.site-main -->
+
+		
+        <div class="content-section" id="portfolio" >
+            <div class="container">
+                <div class="row" >
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>ARTISTS</h2>
+                        <p>We manage awe inspiring talents of Kolkata. Our roster boasts of the Ever Versatile DJ Girish, Bass Specialist Rahul Indoria, Visual Hypnotist Danish Qamar and House Maharaja RITZZZE. For bookings <a href="#contact">Contact.</a></p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row" >
+                    
+					
+					<div class="portfolio-item col-md-3 col-sm-6" >
+                        <div class="portfolio-thumb">
+                            <img src="images/artist/cover1.jpg" alt="">
+                            <div class="portfolio-overlay" style="background-image: url('images/bg.jpg');background-repeat: no-repeat;">
+                                <h3>RAHUL INDORIA</h3>
+                                <p>View in Gallery</p>
+                                <a href="images/artist/1.jpg" data-rel="lightbox" class="expand">
+                                    <i class="material-icons">photo_size_select_actual</i>
+                                </a>
+									
+									<br/>
+									<br/>
+								<button type="button" class="btn btn-default" onClick="detail_Rahul()">BIOGRAPHY</button>
+								
+								<br/>
+								
+								<div class="social">
+									<ul>
+										<li><a href="https://www.mixcloud.com/djrahulindoria/"><i class="fa fa-lg fa-cloud" aria-hidden="true"></i></a></li>
+								
+										<li><a href="https://www.facebook.com/rahulindoriafanpage"><i class="fa fa-lg fa-facebook"></i></a></li>
+									</ul>
+								</div>
+								
+                                
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+
+
+
+                    <div class="portfolio-item col-md-3 col-sm-6" >
+                        <div class="portfolio-thumb">
+                            <img src="images/artist/cover2.jpg" alt="">
+                            <div class="portfolio-overlay" style="background-image: url('images/bg.jpg');background-repeat: no-repeat;">
+                                <h3>DJ GIRISH</h3>
+                                <p>View in Gallery</p>
+                                <a href="images/artist/2.jpg" data-rel="lightbox" class="expand">
+                                    <i class="material-icons">photo_size_select_actual</i>
+                                </a>
+									
+									<br/>
+									<br/>
+								<button type="button" class="btn btn-default" onClick="detail_Girish()">BIOGRAPHY</button>
+								
+								<br/>
+								
+								<div class="social">
+									<ul>
+										<li><a href="https://soundcloud.com/djgirishmusic"><i class="fa fa-lg fa-soundcloud"></i></a></li>
+								
+										<li><a href="https://www.facebook.com/DJGirishOfficial/?fref=ts"><i class="fa fa-lg fa-facebook"></i></a></li>
+									</ul>
+								</div>
+								
+                                
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+
+
+
+
+                     <div class="portfolio-item col-md-3 col-sm-6" >
+                        <div class="portfolio-thumb">
+                            <img src="images/artist/cover3.png" alt="">
+                            <div class="portfolio-overlay" style="background-image: url('images/bg.jpg');background-repeat: no-repeat;">
+                                <h3>RITZZZE</h3>
+                                <p>View in Gallery</p>
+                                <a href="images/artist/3.jpg" data-rel="lightbox" class="expand">
+                                    <i class="material-icons">photo_size_select_actual</i>
+                                </a>
+									
+									<br/>
+									<br/>
+								<button type="button" class="btn btn-default" onClick="detail_Ritzzze()">BIOGRAPHY</button>
+								
+								<br/>
+								
+								<div class="social">
+									<ul>
+										<li><a href="http://www.soundcloud.com/ritzzze"><i class="fa fa-lg fa-soundcloud"></i></a></li>
+								
+										<li><a href="http://www.facebook.com/djritzzze"><i class="fa fa-lg fa-facebook"></i></a></li>
+									</ul>
+								</div>
+								
+                                
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+
+
+
+
+                    <div class="portfolio-item col-md-3 col-sm-6" >
+                        <div class="portfolio-thumb" >
+                            <img src="images/artist/cover4.jpg" alt="">
+                            <div class="portfolio-overlay" style="background-image: url('images/bg.jpg');background-repeat: no-repeat;">
+                                <h3>VJ DANISH</h3>
+                                <p>View in Gallery</p>
+                                <a href="images/artist/4.jpg" data-rel="lightbox" class="expand">
+                                        <i class="material-icons">photo_size_select_actual</i>
+                                </a>
+								<br/>
+								
+								<br/>
+								<button type="button" class="btn btn-default" onClick="detail_Danish()">BIOGRAPHY</button>
+								
+								
+								<br/>
+								<div class="social">
+									<ul>
+										<li><a href="https://www.youtube.com/channel/UCccVyjZfeCq9o2dXTT2m5ow" ><i class="fa fa-lg fa-youtube"></i></a>
+								
+										<li><a href="https://www.facebook.com/vjdanishqamar/"><i class="fa fa-lg fa-facebook"></i></a></li>
+									</ul>
+								</div>
+								
+								
+                            </div> <!-- /.portfolio-overlay -->
+                        </div> <!-- /.portfolio-thumb -->
+                    </div> <!-- /.portfolio-item -->
+                    
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#portfolio -->
+
+
+
+<!-- 
+        <div class="content-section" id="our-team">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Our Team</h2>
+                        <p>Get to know our people and company</p> -->
+                    <!-- </div> <!-- /.heading-section --> 
+                <!--</div> <!-- /.row -->
+                <!-- <div class="row" style="gravity:center">
+                    
+                    <div class="team-member col-md-3 col-sm-6">
+                        <div class="member-thumb">
+                            
+                            <div class="team-overlay">
+                                <h3>Cindy</h3>
+                                <span>Developer</span>
+                                <ul class="social">
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                                 </ul>
+                            </div> <!-- /.team-overlay -->
+                        <!--</div> <!-- /.member-thumb -->
+                   <!-- </div> <!-- /.team-member -->
+					<!-- <div class="team-member col-md-3 col-sm-6">
+                        <div class="member-thumb">
+                            <img src="images/member2.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Cindy</h3>
+                                <span>Developer</span>
+                                <ul class="social">
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                                </ul> -->
+                     <!--       </div> <!-- /.team-overlay -->
+                     <!--   </div> <!-- /.member-thumb -->
+                    <!--</div> <!-- /.team-member -->
+                    <!-- <div class="team-member col-md-3 col-sm-6">
+                        <div class="member-thumb">
+                            <img src="images/member3.jpg" alt="">
+                            <div class="team-overlay">
+                                <h3>Mary</h3>
+                                <span>Director</span>
+                                <ul class="social">
+                                    <li><a href="#" class="fa fa-facebook"></a></li>
+                                    <li><a href="#" class="fa fa-twitter"></a></li>
+                                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                                </ul>
+                            </div> <!-- /.team-overlay -->
+                        <!--</div> <!-- /.member-thumb -->
+                    <!--</div> <!-- /.team-member -->
+                    
+                <!--</div> <!-- /.row -->
+                <!-- <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="skills-heading">
+                            <h3 class="skills-title">Our web design skills</h3>
+                            <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div> -->
+                    <!--</div> <!-- /.col-md-12 -->
+                <!--</div> <!-- /.row -->
+                <!-- <div class="row">
+                    <div class="col-md-8 col-sm-6">
+                        <p>Aliquam faucibus in dolor sed vestibulum. Sed adipiscing malesuada luctus. Morbi tincidunt, tellus scelerisque scelerisque scelerisque, sapien dui pretium augue, at consectetur sapien tellus vitae nunc. Ut vitae metus quis nulla cursus adipiscing pretium vel dolor. Fusce lacinia accumsan arcu, quis porttitor nisi tincidunt ut. Nunc malesuada nunc eget nunc sollicitudin posuere. Maecenas vitae tortor quis odio hendrerit sagittis.<br><br>
+						Etiam tincidunt, magna eu elementum tristique, sapien nisl venenatis lacus, nec sagittis lectus dui eget lorem. Donec in tempus mi. Aenean egestas interdum dolor, et mollis lectus consequat. Mauris ullamcorper, felis sit amet gravida malesuada, nisi sem rhoncus massa, non tempor est erat sit amet diam.<!-- spacing for mobile viewing <br><br>
+						</p>
+                    </div> <!-- /.col-md-8 -->
+                    <!-- <div class="col-md-4 col-sm-6">
+                        <ul class="progess-bars">
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;">Photoshop 72%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">HTML 80%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">WordPress 65%</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">Marketing 80%</div>
+                                </div>
+                            </li>
+                        </ul> -->
+                    <!--</div> <!-- /.col-md-4 -->
+                <!--</div> <!-- /.row -->
+            <!--</div> <!-- /.container -->
+        <!--</div> <!-- /#our-team -->
+
+        <div class="content-section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="heading-section col-md-12 text-center">
+                        <h2>Contact</h2>
+                        <p>Send a message to us or Subscribe</p>
+                    </div> <!-- /.heading-section -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-12">
+                       <div class="googlemap-wrapper">
+                            <div id="map_canvas" class="map-canvas"></div>
+                        </div> <!-- /.googlemap-wrapper -->
+                    </div> <!-- /.col-md-12 -->
+                </div> <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-7 col-sm-6">
+                        <p>
+							<a rel="nofollow" href="#" target="_parent">T Agency</a> is an Artist Management agency based out of Kolkata. T in the name stands for Talent and the idea is to recognize local talent and take it to the next level. T Agency also works closely with International Artists and provides promoters in India an opportunity to work with these Artists at affordable prices, making the audience's ticket even cheaper and work towards the larger goal of improving the Concert and EDM scene in India and taking it a notch higher.<br><br>
+							
+							T Agency is a project of Creative Cubes, a company formed in 2013 and has the accolades of managing the first ever SUNBURN Reload in West Bengal. Creative Cubes has worked with International Artists <a rel="nofollow" href="#portfolio" target="_parent">WolfPack</a>, <a rel="nofollow" href="#portfolio" target="_parent">Marnik</a> and <a rel="nofollow" href="#portfolio" target="_parent">Hard Candies</a> and also Indian Artists <a rel="nofollow" href="#portfolio" target="_parent">Lost Stories</a>.<br/><br/>
+							
+							We manage the best talents Kolkata has to offer, our roster boasts of the Ever Versatile DJ Girish, Bass Specialist Rahul Indoria, Visual Hypnotist Danish and House Maharaja RITZZZE. For bookings Contact
+						</p>
+                        <ul class="contact-info">
+                            <li>Mobile: +91 9874386374</li>
+							<li>Landline: 033 40087880</li>
+                            <li>Email: <a href="mailto:bookings@tagency.in">bookings@tagency.in</a></li>
+                            <li>Address: 66/1A, Bright Street, Kolkata 700019</li>
+                        </ul>
+                        <!-- spacing for mobile viewing --><br><br>
+                    </div> <!-- /.col-md-7 -->
+                    <div class="col-md-5 col-sm-6">
+                        <div class="contact-form">
+                            <form method="POST" action="sendmessage.php">
+                                <p>
+                                    <input name="name" type="text" id="name" placeholder="Your Name">
+                                </p>
+                                <p>
+                                    <input name="email" type="text" id="email" placeholder="Your Email"> 
+                                </p>
+                                <p>
+                                    <input name="subject" type="text" id="subject" placeholder="Subject"> 
+                                </p>
+                                <p>
+                                    <textarea name="comments" id="comments" placeholder="Message"></textarea>    
+                                </p>
+                                <input type="submit" name="submit" class="mainBtn" value="Send Message">
+                            </form>
+							
+							<div class="strike">
+							   <span>OR</span>
+							</div>
+							
+							<form method="POST" action="subscribe.php">
+                            
+                                <p>
+                                    <input name="email2" type="text" id="email2" placeholder="Email to subscribe"> 
+                                </p>
+                                
+                                <input type="submit" name="submit" class="mainBtn" value="Subscribe">
+                            </form> 
+                        </div> <!-- /.contact-form -->
+                    </div> <!-- /.col-md-5 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#contact -->
+            
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 text-left">
+                        <span>Copyright &copy; 2016 T Agency, &nbsp&nbsp&nbsp&nbsp&nbspWebsite developed by Akash Giri</span>
+                  </div> <!-- /.text-center -->
+                    <div class="col-md-4 hidden-xs text-right">
+                        <a href="#top" id="go-top">Back to top</a>
+                    </div> <!-- /.text-center -->
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /#footer -->
+		
+		
+		
+		
+		<div class="modal fade" id="ModalDetail" role="dialog">
+			<div class="modal-dialog" style="overflow:auto;">
+    
+      <!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<img id="artistimg" height="50" width="50"/>
+							<h4 class="modal-title" id="headerPart" style="weight:900;color:#ec523f;font-size:30px;"></h4>
+							
+					</div>
+					<div class="modal-body" id="ModalDetailBody" >
+						<h4 id="bodyPart" style="weight:bold;font-size:15px;"></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+        
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+       
+        <!-- Google Map Init-->
+                 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        
+        <!-- Google Map Init-->
+        <script type="text/javascript">
+			var image = {
+							url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+							scaledSize : new google.maps.Size(22, 32)
+						};
+            jQuery(function($){
+                $('#map_canvas').gmap3({
+                    marker:{
+                        address: '22.53578, 88.36828' ,
+						
+						title: 'Title',
+						icon: 'https://cdn4.iconfinder.com/data/icons/small-n-flat/24/map-marker-128.png'
+                    },
+                        map:{
+                        options:{
+                        zoom: 15,
+                        scrollwheel: false,
+                        streetViewControl : true
+						
+                        }
+                    }
+                });
+
+                /* Simulate hover on iPad
+                 * http://stackoverflow.com/questions/2851663/how-do-i-simulate-a-hover-with-a-touch-in-touch-enabled-browsers
+                 --------------------------------------------------------------------------------------------------------------*/ 
+                $('body').bind('touchstart', function() {});
+            });
+        </script>
+		<script type="text/javascript">
+			var queryStr = window.location.search;
+			var paramPairs = queryStr.substr(1).split('=');
+			if(paramPairs[1]=="success")
+			{
+				$(".modal-body #bookId").text( "Your email ID is successfully registered. Your will regularly informed about latest news and updates.");
+				$('#myModal').modal();
+			}
+			else
+				if(paramPairs[1]=="invalid")
+					{
+						$(".modal-body #bookId").text( "The email ID you enter does not seem to be valid!");
+						$('#myModal').modal();
+					}
+				else
+					if(paramPairs[1]=="empty")
+					{
+						$(".modal-body #bookId").text( "All fields are mandatory!");
+						$('#myModal').modal();
+					}
+					else
+						if(paramPairs[1]=="sent")
+						{
+							$(".modal-body #bookId").text( "Your message has been sent to the Manager. He will contact you soon.");
+							$('#myModal').modal();
+						}
+						else
+							if(paramPairs[1]=="duplicate")
+							{
+								$(".modal-body #bookId").text( "You have already subscribed with this email.");
+								$('#myModal').modal();
+							}
+				
+				
+		</script>
+		<script type="text/javascript">
+			function detail_Rahul()
+			{
+				$(".modal-header #artistimg").css("background","url(images/artist/ico1.jpg)");
+				$(".modal-header #headerPart").text("RAHUL INDORIA");
+				
+               var s = "Rahul Indoria, currently based in Kolkata, started off his career shuffling between two clubs - Xrong Place, Kolkata and The Silver Spring, Kolkata. <br><br>"+"After putting in a lot of hard work and having created goodwill for himself he finally cracked the deal with Venom, which was Kolkata’s word for night-club back in the day. <br><br>"+"Later he joined Privy Ultra Lounge, Kolkata as its resident DJ. Rahul, single-handedly, with his music working wonders, turned this lounge into a party-goers paradise. <br><br>"+"“Freaky Fridays”, which has become an inevitable part of Privy’s lineage, was Rahul's brain-child. As charming as he is and so is his music, like the Pied Piper of Hamelin he pulled in all young party people in swarms and how! <br><br>"+"Rahul has a penchant for versatility. He plays Moombahton with just as much ease with which he plays Commercial house. <br><br>"+"In these six years of his career Rahul has had the privilege of being lined up with a host of International and National DJs; to name a few - DJ Scott Langley, DJ Charlotte, DJ Kellie Acreman, DJ Neil Armstrong, DJ Dallas Kandi, DJ Lloyd, DJ Swing, DJ Katya Tsaryova, DJ Flynn, DJ Ivan, DJ Nikhil Chinappa, DJ G Kilogram, DJ NYK, DJ Anish Sood, DJ Nawed Khan, DJ Mash, DJ Tuhin Mehta and Nucleya. <br><br>"+"Rahul made his music festival debut at D.U.S.K Neon, 2013 which is Eastern India’s Biggest Music Festival. After this big debut he went onto play for Eastern India’s first Full Moon Beach Party in 2014. He has also performed at The Journey Music Festival 2014 in Kolkata, Reverb Select: Chasing Summers 2014, Ultimate Madness Music Festival 2014, The Bass Kicks, Decible Pool Party at Smoke Shack, Kolkata, Fiestero Friendship Day Bash 2014 at Shisha Reincarnated, Kolkata and Electronic Tremors at Henry’s,Kolkata. <br><br>"+"Rahul plays a wide genre when it comes to his live sets. He specialises in house music, mainly progressive, minimal, electro and commercial. His sets consist of a lot of big room sounds."+"In recent times he’s exploring a lot with drum and bass, funk, reggae, hip-hop, trap along with indian classical vocals. <br><br>"+"Rahul is always experimenting, even when he’s playing live. His sets scream versatile and they are always loaded with surprise. <br><br>"+"He looks forward to producing his own music where he wants to work with not only indian classical vocals but also classical instruments. <br><br>"+"Rahul has bagged the much coveted award for the Best Upcoming DJ, Kolkata at the Kolkata Nightlife Awards in association with Vh1, 2014.";
+				
+                $(".modal-body #bodyPart").html(s);
+				
+				$('#ModalDetail').modal();
+			}
+			
+
+
+
+			function detail_Girish()
+			{
+				$(".modal-header #artistimg").css("background","url(images/artist/ico2.jpg)");
+				$(".modal-header #headerPart").text("GIRISH");
+				var s="Playing a wide variety of genres Girish has been on top of his profession and his 13 year long residency of one of the most happening clubs of Kolkata is proof of his consistency and musical attributes. He has opened for<b> Ummet Ozcan, John OO Fleming, Jordy Dazz, W&W and Pitbull. </b>He has played at <b>Ibiza </b>and various other international locations. He is currently the resident DJ at M BAR which happens to be the numero uno club of Kolkata. Before M BAR he was the resident DJ of SHISHA and he held that place for more than 13 years. From Techno to Progressive House and anything from Deep House to EDM Girish’s music connects commercial crowd as well as conservative dance music punters. With one track already out and a couple of sick releases in the pipe line, this year already looks lit. <br><br>•	Opened for <b>W&W</b> in Kolkata in May 2013. <br>•	Opened for international superstar <b>Pitbull</b> in Kolkata in April 2013. <br>•	Opened for <b>Juicy M</b> at Shisha. <br>•	Opened for treasure of trance music <b>John OO Fleming.</b><br>•	Opened for <b>Jordy Dazz, Jochen Miller, Futuristic Polar Bears, Disfunktion, and Hard Rock Sofa</b> in 2015. <br>•	Played at the opening of the Sri Lanka’s iconic <b>25th Street.</b><br>•	Opened for <b>Max Graham’s “Cycles Tour”.</b><br>•	Played B2B with <b>UMMET OZCAN</b> at SHISHA during his India Tour back in 2010. <br>•	Played B2B with <b>DJ Tim Cullen at Ministry of Sound</b> Party in Kolkata. <br>•	Played B2B with Trance Superstar <b>Andy Moor, Sophie Sugar</b> during <b>ARMADA Records Tour</b> in Kolkata. <br>•	Played alongside <b>GUY J</b> and hosted the first ever <b>Lost & Found Party</b> for Lost & Found Records in Kolkata. <br>•	Is the only DJ from East India to be nominated by <b>MY PURPLE MARTINI</b> in the <b>Best House DJ Category </b>from Kolkata for the year 2013-2014. <br>•	Has been nominated in the <b>Best DJ</b> (House) Category at <b>MY FAV DJ AWARDS</b> in 2015 and 2016. <br>•	Played extensively at <b>F tv Bar Delhi, Kitty Su, Club BW-Delhi. </b><br>•	Played at <b>Tropicana Beach Bar and Club, Mykonos Greece in</b> July 2013. <br>•	Official DJ of <b>Indian Premier League‘s</b> most popular team <b>Kolkata Knight Riders</b> which is owned by Bollywood superstar <b>Shah Rukh Khan. </b> <br>•	Played at <b>Istanbul's</b> most posh club <b> Reina</b> in early 2014. <br>•	Played at the world famous <b>Pacha Ibiza Dubai</b> in February 2015. <br>•	Played at <b>Ibiza</b> Summer in July 2015 at Bora Bora and is scheduled to play at Ibiza in 2016. <br>•	Played at a variety of top notch parties in Thailand, Bangkok, Pattaya, Kuala Lumpur, Rayong, Krabi, Bhutan, Bangladesh and Malaysia. <br>•	Played for Ritz Carlton and Shangri La in Abu Dhabi. <br>•	Played at Xavotsav which is the most prestigious college fest of the City of Joy. <br>•	Played at FBGV Centre, Barcelona. <br><br><b>PRODUCTIONS</b><br><br>•	Has released his own remake of Paul Van Dyk classic Another Way on Lohit Records on the 25th December 2014. <br><a href=\"http://www.beatport.com/release/another-way/1436660 \">Here</a><br><br>•	Has completed his unreleased Techno/Tech House EP (Date to be announced soon). <br><a href=\"https://soundcloud.com/girish-wadhwani/narcotech-teaser\">Here </a><br><br>•	Has produced Gimaniya which has been released under Wolfrage recordings. <br><a href=\"https://www.beatport.com/track/gimaniya-original-mix/8220526\"> Here</a><br><br>";
+
+
+
+				$(".modal-body #bodyPart").html(s);
+				
+				$('#ModalDetail').modal();
+			}
+
+
+
+			function detail_Danish()
+			{
+				$(".modal-header #artistimg").css("background","url(images/artist/ico4.jpg)");
+				$(".modal-header #headerPart").text("VJ DANISH");
+				
+				
+				var s = "Tripping Visuals is what comes to mind when VJ Danish’s name is taken. He is one of the youngest growing Visual Jockey’s in the country. With a history of being the resident VJ of Privy and M BAR, Kolkata which is the city’s number one nightclub. From Projection Mapping to Live Visuals for Electronic Dance Music festivals and clubs all over the country Danish promises a visual treat like no other. He uses a very out of the box yet power-packed approach to get the visuals in sync with the music for that ultimate experience which one would never forget.<br>The path to VJing has been a roller coaster ride for Danish. His love and understanding of music led him straight to it. The idea of blending visuals and effects to go along with the music is the most unique part about his performances. He stepped into this self driven career of being a Visual Jockey at a very young age and has the ability of being able to use technology to good effect.e is taking the experience of visuals to new heights by implementing skill sets of 3D & 4D Projection Mapping / Video Mapping, LED Video Mapping to give that once in a life time experience.<br><br><i>“Blow your mind, eyes and connect to your soul</i> with a little luminous pixel.” -  VJ Danish<br><br><b>DJ's VJ Danish has performed alongside:</b><br>Marnik<br>Jordy Dazz<br>Jochen Miller<br>Futuristic Polar Bears<br>John 00 Fleming<br>Teri Miko<br>Diamonds<br>Burn In Noise<br>Zaeden<br>Hard Candies<br>Kohra<br>Ivan<br>Swing<br>Vinayaka<br>Girish<br>Sound Avtar<br>Mojo Jojo<br>Harsh Bhutani<br>Rannvijay<br>Dj Skip<br>V : Society<br>Ruben<br>Mica <br>Su Real<br>BubbleGuns<br><br><b>Events he has performed in : </b><br><br>WIPEOUT MUSIC FECTIVAL<br>THE BEER FESTIVAL<br>THE BEER FEST<br>STOMP FESTIVAL<br>SANDSTORM<br>ASTRONOMIA<br>";
+				
+				
+				$(".modal-body #bodyPart").html(s);
+				
+				$('#ModalDetail').modal();
+			}
+
+
+
+
+			function detail_Ritzzze()
+			{
+				$(".modal-header #artistimg").css("background","url(images/artist/ico3.jpg)");
+				$(".modal-header #headerPart").text("RITZZZE");
+				
+				
+				var s = "<i>“Ritzzze - Lyricist and Rapper. The 22 yr old has revolutionised the way of doing live performances. He has enthralled the Kolkata crowd with his incomparable lyrics and his style of rapping and jamming. Hailed as the next big thing in the music market by all music biggies. The boy is talented and brings in a breath of fresh air in the party circuit of Kolkata. If critics and veterans still doubt the boy’s talent they better watch out, because he is here to stay.”</i> 	<b>-The Telegraph</b></br>	<br></br><b>LABEL - EXUBERANT RECORDS, INDIA </b></br>		</br><b>Track Debut EP - MANCORE - Released worldwide on the 21st of May 2016 on BEATPORT</b></br>		</br><b>Track Debut EP - MANCORE - Released worldwide on the 21st of May 2016 on BEATPORT</b></br>		</br>Started his musical journey at the age of 16 just by experimenting different music samples on his computer. At the age of 18, he joined Sourav’s- Prince Of Cal Lounge as a resident DJ. Within a year’s time, he became the popular face of Kolkata’s most happening Jam Sessions. Soon he was setting up his own small Hip Hop/Rap band as well. He has now become a regular Page 3 photo in the newspapers. He plays all kinds of music, from commercial to Hip Hop to Electronica and Trip Hop but what really makes him different from others is his rapping and MC skills. <br>My FAV DJ Nominee for 2015-2016 in the House category Ranked Best Music Producer of East India by The Telegraph earlier in his career Winner for the Gemini War of the DJs 2006 <br><br>Opened for Ivan, Ajit Pai, Ma Faiza, Amour, Zaeden, Teri Miko, (S)haan, Marnik, Wolfpack, James Hardcourt, Nikhil Chinappa, Mash, Aceaxe, Progressive Brothers, Kilogram, DJ Sa , Anish Sood, Lost Stories, Siana Catherine, Mash and Ajit Pai. <br><br>Genre - Mainstage House / Minimal / Techno / Progressive / Trap / Hip Hop / R N B <br><br><b> Worked as Resident DJ for:</b><br>•	Prince Of Cal Lounge <br>•	Veda <br>•	Nostradamus <br>•	Soho <br>•	Palazzo <br>•	Gucci bar / China House Pop Up - Hyatt <br><br><br><b>Music Festivals </b><br/><br/>•	The Journey <br/>•	Dusk <br/>•	Sunburn Campus <br/>•	Sunburn Reload<br/>•	Kolkata Electronica Festival<br/>•	Barcode<br/>•	United Music Festival<br/>•	Sunset Anthem <br/>•	Sun Festival<br/>•	Stomp <br/>•	VIDESI <br/>•	Aquasonic Music Festival<br/>•	SKY Festival<br/>•	Kolkata Holi Music Fiesta<br/><br/><b>Club Gigs </b><br/><br/>•	Prince Of Cal lounge - Kolkata<br/>•	Veda - Kolkata<br/>•	Privy - Kolkata<br/>•	Plush - Kolkata<br/>•	Big Ben - Kolkata<br/>•	Tantra - Kolkata<br/>•	Roxy - Kolkata<br/>•	Myx - Kolkata<br/>•	Shisha - Kolkata<br/>•	Havana Club - Chennai<br/>•	Third Eye - Delhi<br/>•	Aqua - Delhi<br/>•	Lap - Delhi<br/>•	degrees Brouhous - Gurgaon<br/>•	Shimmers - Delhi<br/>•	Lap - Delhi<br/>•	Pangea - Delhi<br/>•	Kitty Su - Delhi<br/>•	Bottles and Chimne - Hyderabad<br/>•	Farm - Hyderabad<br/>•	Cafe Mambo - Goa <br/>•	The Blue Bar - Delhi <br/><br/>";
+				
+				
+				$(".modal-body #bodyPart").html(s);
+				
+				$('#ModalDetail').modal();
+			}
+		</script>
+	</body>
+</html>
